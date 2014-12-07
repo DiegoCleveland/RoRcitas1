@@ -1,0 +1,18 @@
+
+
+<%= form_tag({:controller => "formularios", :action => "por_post"}, :method => "post") do %>
+   <%= label_tag "nombre", "Nombre" %>
+   <br />
+   <%= text_field_tag "nombre", "", :required => "required" %>
+   <%= label_tag "nombre", "Nombre" %>
+   <br />
+   <%= text_field_tag "autor", "", :required => "required" %>
+   <br />
+   <%= label_tag "autor", "Autor" %>
+   <br />
+   <%= text_area_tag "Comentario", "", :cols => 50, :rows => 10, :required => "required" %>
+   <br />
+
+   <%= submit_tag "Publicar cita" %>
+<% end %>
+
